@@ -33,6 +33,6 @@ class usuario:
 
 
 
-	'''def borrarComentarios(self, borrador):
+	def borrarComentarios(self, borrador):
 		self.url = "https://graph.facebook.com/v2.8/posts"	
-		parametros = '''
+		parametros = {"borrador": borrador, "access_token": self.token}
